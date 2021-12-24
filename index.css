@@ -1,0 +1,107 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--bright-red);
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    background: url(xmasbanner.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Mountains of Christmas', cursive;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .7);
+    padding: 40px;
+}
+.h1 {
+    display: inline-block;
+    color: var(--light-green);
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+    border-bottom: 4px dashed var(--light-green);
+}
+.santa {
+    color: var(--bright-red);
+}
+.santa:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 1px var(--light-green);
+}
+.sign,
+.text-input {
+    color: var(--light-green);   
+    background-color: var(--snow);     
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;    
+}
+
+.sign {
+    border: 5px solid var(--light-green);
+    padding: 1em 0;
+    min-width: 400px;
+    font-size: 40px;
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+    color: var(--light-green);
+    border-top: 4px dashed var(--light-green);
+    margin-right: 10px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text-input {
+    border: 2px dashed var(--bright-red);
+    margin: 40px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    width: 95%;
+}
+.text-input:hover,
+.text-input:focus {
+    outline: none;
+    border: 2px dashed var(--light-green);
+}
+
+.animate,
+.animated {
+    display: inline-block;
+}
+
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);  
+    }
+    100% {
+        transform: translateY(0);   
+    }
+}
